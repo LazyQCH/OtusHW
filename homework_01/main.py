@@ -30,11 +30,11 @@ def filter_numbers(numbers, filter):
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
-    if filter == 'odd':
+    if filter == ODD:
         return [num for num in numbers if num % 2]
-    elif filter == 'even':
+    elif filter == EVEN:
         return [num for num in numbers if not num % 2]
-    elif filter == 'prime':
+    elif filter == PRIME:
         row = []
         for i in numbers:
             test = True
